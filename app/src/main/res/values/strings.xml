@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Google Image Search</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="searchHint">Enter query here</string>
+    <string name="searchButton">Search</string>
+    <string name="tvTitle">Image Title</string>
+    <string name="title_activity_full_screen">Full Image</string>
+    <string name="title_activity_settings">Search Settings</string>
+</resources>
