@@ -2,11 +2,11 @@
 
 Android Bootcamp Week 2 Assignment: Google Image Search app
 
-This is an Android application that searchs for pictures using the Google Image Search API. 
+This is an Android application that searches for pictures using the Google Image Search API based on a provided query. 
 
-It uses Android Async to make HTTP requests uses Picasso to retrieve the images.
+It uses Android Async to make HTTP requests and Picasso to retrieve the images.
 
-It also uses a custom onScrollListener to support "infinite" scrolling (up to a maximum of 64 pictures). 
+It has a custom onScrollListener to support "infinite" scrolling (up to a maximum of 64 pictures) and a custom GridView adapter.
 
 When thumbnails are clicked, the full image is displayed with the aspect ratios maintained.
 
