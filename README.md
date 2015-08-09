@@ -1,26 +1,15 @@
-# Google_Image_Search
+# Googe Image Search
 
-Android Bootcamp Week 2 Assignment: Google Image Search app
+Description:
+A simple Android application that searches for pictures using the Google Image Search API based on a provided query. It also allows user to click on "settings" in the menuitem and select advanced filters such as size, color, type and site. Filters are persistent during the app session. When thumbnails are clicked, the full image is displayed with the aspect ratios maintained.
 
-This is an Android application that searches for pictures using the Google Image Search API based on a provided query. 
-
-It uses Android Async to make HTTP requests and Picasso to retrieve the images.
-
-It has a custom onScrollListener to support "infinite" scrolling (up to a maximum of 64 pictures) and a custom GridView adapter.
+Technial Details
+- Android Async is used to make HTTP requests to Google Image Search API 
+- Images are retrieved by Picasso
+- It has a custom onScrollListener to support "infinite" scrolling (up to a maximum of 64 pictures) 
+- Added custom GridView adapter.
 
 When thumbnails are clicked, the full image is displayed with the aspect ratios maintained.
 
-Time spent: 6 hours spent in total
-
-Completed user stories:
-
- * [x] Required: User can enter a search query that will display a grid of image results from the Google Image API
- * [x] Required: User can click on "settings" which allows selection of advanced search options to filter results
- * [x] Required: User can configure advanced search filters such as: size, color, type and site
- * [x] Required: Subsequent searches will have any filters applied to the search results
- * [x] Required: User can tap on any image in results to see the image full-screen
- * [x] Required: User can scroll down “infinitely” to continue loading more image results (up to 8 pages)
-
 Walkthrough of all user stories:
-
 ![](image_search.gif)
