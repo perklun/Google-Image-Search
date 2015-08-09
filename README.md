@@ -13,6 +13,7 @@ Technial Details
 
 When thumbnails are clicked, the full image is displayed with the aspect ratios maintained.
 
-Walkthrough of all user stories:
+Walkthrough 
+----
 
 ![](image_search.gif)
