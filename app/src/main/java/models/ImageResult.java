@@ -11,9 +11,12 @@ import java.util.ArrayList;
 
 /**
  * Created by PerkLun on 5/16/2015.
+ *
+ * Representation of each search result (i.e. picture)
  */
 public class ImageResult implements Serializable {
 
+    // Attributes of picture
     public String fullURL;
     public String thumbURL;
     public String title;
@@ -32,15 +35,13 @@ public class ImageResult implements Serializable {
         }
     }
 
-    public ImageResult(String new_fullURL, String new_thumbURL, String new_title, int new_width, int new_height){
-        fullURL = new_fullURL;
-        thumbURL = new_thumbURL;
-        title = new_title;
-        width = new_width;
-        height = new_height;
-    }
-
-    //takes the JSONArray, creates the objects and returns an array of ImageResult
+    /**
+     * Parses the json object returned by Google
+     * Creates ImageResult for each result in json
+     *
+     * @param image_json json object returned by Google
+     * @return result ArrayList of ImageResult
+     */
     public static ArrayList<ImageResult> parseJSON(JSONArray image_json){
         ArrayList<ImageResult> result = new ArrayList<ImageResult>();
         try {
@@ -54,14 +55,29 @@ public class ImageResult implements Serializable {
         return result;
     }
 
+    /**
+     * Get title of picture
+     *
+     * @return title
+     */
     public String getTitle(){
         return title;
     }
 
+    /**
+     * Get thumbnail URL of picture
+     *
+     * @return thumbURL
+     */
     public String getThumbURL(){
         return thumbURL;
     }
 
+    /**
+     * Get full URL of picture
+     *
+     * @return fullURL
+     */
     public String getFullURL(){
         return fullURL;
     }

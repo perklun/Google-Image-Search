@@ -12,13 +12,22 @@ import android.widget.Spinner;
 
 import net.perklim.google_image_search.R;
 
+/**
+ *  Activity that allows user to select their search filters
+ */
 public class SettingsActivity extends ActionBarActivity {
 
+    // Views for available filters
     private EditText etSiteFilter;
     private Spinner spImageSize;
     private Spinner spColorFilter;
     private Spinner spImageType;
 
+    /**
+     * Assign views to id
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +50,12 @@ public class SettingsActivity extends ActionBarActivity {
         return true;
     }
 
-    //Save settings
+    /**
+     * Method called when button to save filters is pressed
+     * Passes new search filters back to parent activity
+     *
+     * @param v
+     */
     public void onSubmit(View v){
         //create intent and pass back parameters
         Intent settings = new Intent();
@@ -55,9 +69,6 @@ public class SettingsActivity extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
